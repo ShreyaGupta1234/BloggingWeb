@@ -22,7 +22,9 @@ function GoogleOAuth() {
                 navigate('/');
             }
         } catch (error) {
+
             setError(error.message);
+            
         }finally {
             setIsLoading(false);
         }
